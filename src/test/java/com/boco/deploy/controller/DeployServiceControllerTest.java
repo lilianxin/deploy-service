@@ -3,9 +3,7 @@ package com.boco.deploy.controller;
 import static org.junit.Assert.*;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
-import java.util.Properties;
 
 import org.junit.After;
 import org.junit.Before;
@@ -34,8 +32,8 @@ public class DeployServiceControllerTest {
 
 	@Test
 	public void testGetAllPackage() {
-		List list = restTemplate.getForObject(url+"package?exp={exp}", List.class, "");
-		System.out.println(list);
+		//List list = restTemplate.getForObject(url+"package?exp={exp}", List.class, "");
+		//System.out.println(list);
 	}
 
 	@Test
@@ -72,6 +70,7 @@ public class DeployServiceControllerTest {
 	}
 
 	
+	@SuppressWarnings("unused")
 	private String toJson(Object obj){
 		ObjectMapper mapper=new ObjectMapper();
 		try {
